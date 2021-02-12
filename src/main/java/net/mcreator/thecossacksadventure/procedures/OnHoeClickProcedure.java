@@ -1,44 +1,11 @@
 package net.mcreator.thecossacksadventure.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
-import net.minecraft.world.GameType;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.SoundCategory;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.state.IProperty;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.client.network.play.NetworkPlayerInfo;
-import net.minecraft.client.entity.player.ClientPlayerEntity;
-import net.minecraft.client.Minecraft;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.thecossacksadventure.block.BlackSoilFarmlandBlock;
-import net.mcreator.thecossacksadventure.block.BlackSoilBlock;
-import net.mcreator.thecossacksadventure.TheCossacksAdventureModElements;
-
-import java.util.Random;
-import java.util.Map;
-import java.util.HashMap;
-
 @TheCossacksAdventureModElements.ModElement.Tag
 public class OnHoeClickProcedure extends TheCossacksAdventureModElements.ModElement {
+
 	public OnHoeClickProcedure(TheCossacksAdventureModElements instance) {
 		super(instance, 2);
+
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -68,11 +35,13 @@ public class OnHoeClickProcedure extends TheCossacksAdventureModElements.ModElem
 				System.err.println("Failed to load dependency world for procedure OnHoeClick!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		if (((((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock())
 						|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.STRUCTURE_VOID
@@ -128,19 +97,23 @@ public class OnHoeClickProcedure extends TheCossacksAdventureModElements.ModElem
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 				BlockState _bs = BlackSoilFarmlandBlock.block.getDefaultState();
+
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
 					if (_bs.has(_property))
 						_bs = _bs.with(_property, (Comparable) entry.getValue());
 				}
+
 				TileEntity _te = world.getTileEntity(_bp);
 				CompoundNBT _bnbt = null;
 				if (_te != null) {
 					_bnbt = _te.write(new CompoundNBT());
 					_te.remove();
 				}
+
 				world.setBlockState(_bp, _bs, 3);
+
 				if (_bnbt != null) {
 					_te = world.getTileEntity(_bp);
 					if (_te != null) {
@@ -152,13 +125,16 @@ public class OnHoeClickProcedure extends TheCossacksAdventureModElements.ModElem
 				}
 			}
 		}
+
 	}
 
 	@SubscribeEvent
 	public void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 		PlayerEntity entity = event.getPlayer();
+
 		if (event.getHand() != entity.getActiveHand())
 			return;
+
 		int i = event.getPos().getX();
 		int j = event.getPos().getY();
 		int k = event.getPos().getZ();
@@ -172,4 +148,5 @@ public class OnHoeClickProcedure extends TheCossacksAdventureModElements.ModElem
 		dependencies.put("event", event);
 		this.executeProcedure(dependencies);
 	}
+
 }
