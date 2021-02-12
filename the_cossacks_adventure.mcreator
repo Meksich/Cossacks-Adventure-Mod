@@ -2,57 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "BlackSoil",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "black_soil"
-    },
-    {
-      "name": "OnHoeClick",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "on_hoe_click",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BlackSoilFarmland",
-      "type": "block",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "black_soil_farmland"
-    },
-    {
       "name": "Salt",
       "type": "item",
       "sortid": 5,
@@ -60,6 +9,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "salt"
+    },
+    {
+      "name": "SaloRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salo_recipe"
+    },
+    {
+      "name": "Salo",
+      "type": "food",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salo"
     },
     {
       "name": "SaloEaten",
@@ -77,24 +44,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Salo",
-      "type": "food",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "salo"
-    },
-    {
-      "name": "SaloRecipe",
-      "type": "recipe",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "salo_recipe"
     }
   ],
   "variable_elements": [],
@@ -103,7 +52,6 @@
     "en_us": {
       "block.the_cossacks_adventure.black_soil_farmland": "Black Soil Farmland",
       "item.the_cossacks_adventure.salo": "Salo",
-      "item.the_cossacks_adventure.salt": "Salt",
       "block.the_cossacks_adventure.black_soil": "Black Soil"
     }
   },
