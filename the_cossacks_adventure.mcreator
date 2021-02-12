@@ -11,39 +11,6 @@
       "registry_name": "black_soil"
     },
     {
-      "name": "OnHoeClick",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "on_hoe_click",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "BlackSoilFarmland",
       "type": "block",
       "sortid": 3,
@@ -60,6 +27,50 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "black_soil_no_grass"
+    },
+    {
+      "name": "Salt",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salt"
+    },
+    {
+      "name": "SaloRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salo_recipe"
+    },
+    {
+      "name": "Salo",
+      "type": "food",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salo"
+    },
+    {
+      "name": "SaloEaten",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salo_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
