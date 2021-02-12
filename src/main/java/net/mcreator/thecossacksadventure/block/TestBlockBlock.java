@@ -1,29 +1,17 @@
 
 package net.mcreator.thecossacksadventure.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.thecossacksadventure.TheCossacksAdventureModElements;
-
-import java.util.List;
-import java.util.Collections;
 
 @TheCossacksAdventureModElements.ModElement.Tag
 public class TestBlockBlock extends TheCossacksAdventureModElements.ModElement {
+
 	@ObjectHolder("the_cossacks_adventure:test_block")
 	public static final Block block = null;
+
 	public TestBlockBlock(TheCossacksAdventureModElements instance) {
 		super(instance, 1);
+
 	}
 
 	@Override
@@ -32,18 +20,26 @@ public class TestBlockBlock extends TheCossacksAdventureModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
+
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(
+
+					Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
+
 			setRegistryName("test_block");
 		}
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
+
 	}
+
 }
