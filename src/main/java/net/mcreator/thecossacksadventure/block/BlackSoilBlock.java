@@ -15,33 +15,25 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
-import net.minecraft.util.ActionResultType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.thecossacksadventure.procedures.BlackSoilOnBlockRightClickedProcedure;
 import net.mcreator.thecossacksadventure.TheCossacksAdventureModElements;
 
 import java.util.Random;
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 import java.util.Collections;
 
 @TheCossacksAdventureModElements.ModElement.Tag
@@ -75,26 +67,6 @@ public class BlackSoilBlock extends TheCossacksAdventureModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
-				BlockRayTraceResult hit) {
-			super.onBlockActivated(state, world, pos, entity, hand, hit);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			Direction direction = hit.getFace();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BlackSoilOnBlockRightClickedProcedure.executeProcedure($_dependencies);
-			}
-			return ActionResultType.SUCCESS;
 		}
 	}
 	@Override

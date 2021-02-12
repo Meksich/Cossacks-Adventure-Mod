@@ -21,27 +21,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BlackSoilOnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "black_soil_on_block_right_clicked",
-      "metadata": {
-        "dependencies": [
-          {
             "name": "entity",
             "type": "entity"
           },
@@ -67,7 +46,7 @@
     {
       "name": "BlackSoilFarmland",
       "type": "block",
-      "sortid": 4,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {},
