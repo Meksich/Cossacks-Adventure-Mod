@@ -33,9 +33,9 @@
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:BlackSoilNoGrass"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

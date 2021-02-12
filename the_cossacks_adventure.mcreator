@@ -51,6 +51,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "black_soil_farmland"
+    },
+    {
+      "name": "BlackSoilNoGrass",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_soil_no_grass"
     }
   ],
   "variable_elements": [],
@@ -58,7 +67,8 @@
   "language_map": {
     "en_us": {
       "block.the_cossacks_adventure.black_soil_farmland": "Black Soil Farmland",
-      "block.the_cossacks_adventure.black_soil": "Black Soil"
+      "block.the_cossacks_adventure.black_soil": "Black Soil",
+      "block.the_cossacks_adventure.black_soil_no_grass": "Black Soil No Grass"
     }
   },
   "workspaceSettings": {

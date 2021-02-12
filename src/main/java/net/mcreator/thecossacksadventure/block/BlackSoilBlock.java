@@ -4,6 +4,7 @@ package net.mcreator.thecossacksadventure.block;
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.IPlantable;
 
 import net.minecraft.world.storage.loot.LootContext;
@@ -52,7 +53,8 @@ public class BlackSoilBlock extends TheCossacksAdventureModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.ORGANIC).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(1)
+					.harvestTool(ToolType.SHOVEL));
 			setRegistryName("black_soil");
 		}
 
@@ -66,7 +68,7 @@ public class BlackSoilBlock extends TheCossacksAdventureModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(BlackSoilNoGrassBlock.block, (int) (1)));
 		}
 	}
 	@Override

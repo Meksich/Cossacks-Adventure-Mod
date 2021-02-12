@@ -2,14 +2,14 @@
   "_fv": 13,
   "_type": "block",
   "definition": {
-    "texture": "test",
+    "texture": "blacksoilbottom",
     "textureTop": "test",
-    "textureLeft": "test",
-    "textureFront": "test",
-    "textureRight": "test",
-    "textureBack": "test",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "textureLeft": "test3",
+    "textureFront": "test2",
+    "textureRight": "test2",
+    "textureBack": "test2",
+    "renderType": 2,
+    "customModelName": "blacksoilfarmland_(1):default",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -33,19 +33,19 @@
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "shovel",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:BlackSoilNoGrass"
     },
-    "dropAmount": 1,
+    "dropAmount": 2,
     "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "EARTH"
     },
     "tickRate": 10,
     "tickRandomly": false,

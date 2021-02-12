@@ -1,12 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "the_cossacks_adventure:custom/blacksoilfarmland_(1)",
   "textures": {
-    "down": "the_cossacks_adventure:blocks/test",
-    "up": "the_cossacks_adventure:blocks/test",
-    "north": "the_cossacks_adventure:blocks/test",
-    "east": "the_cossacks_adventure:blocks/test",
-    "south": "the_cossacks_adventure:blocks/test",
-    "west": "the_cossacks_adventure:blocks/test",
-    "particle": "the_cossacks_adventure:blocks/test"
+    "all": "the_cossacks_adventure:blocks/blacksoilbottom",
+    "particle": "the_cossacks_adventure:blocks/blacksoilbottom",
+    "0": "the_cossacks_adventure:blocks/blacksoilbottom"
   }
 }
