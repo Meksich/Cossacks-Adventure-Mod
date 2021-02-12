@@ -12,7 +12,7 @@
       "value": "FOOD"
     },
     "stackSize": 64,
-    "nutritionalValue": 4,
+    "nutritionalValue": 20,
     "saturation": 10.0,
     "eatingSpeed": 60,
     "resultItem": {

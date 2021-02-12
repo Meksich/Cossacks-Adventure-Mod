@@ -1,5 +1,5 @@
 {
-  "group": "food",
+  "group": "the_cossacks_adventure",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "012",
@@ -36,7 +36,7 @@
     }
   },
   "result": {
-    "item": "the_cossacks_adventure:unknown_element",
+    "item": "the_cossacks_adventure:salo",
     "count": 3
   }
 }

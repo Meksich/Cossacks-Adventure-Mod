@@ -33,7 +33,7 @@ public class SaloItem extends TheCossacksAdventureModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(4).saturation(10f).meat().build()));
+					.food((new Food.Builder()).hunger(20).saturation(10f).meat().build()));
 			setRegistryName("salo");
 		}
 
