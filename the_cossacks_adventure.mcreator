@@ -46,7 +46,7 @@
     {
       "name": "BlackSoilFarmland",
       "type": "block",
-      "sortid": 4,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {},

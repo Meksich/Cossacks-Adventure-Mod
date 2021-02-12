@@ -109,12 +109,12 @@ public class OnHoeClickProcedure extends TheCossacksAdventureModElements.ModElem
 			}.checkGamemode(entity)))) {
 				if (!world.getWorld().isRemote) {
 					world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1);
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chest.open")),
+							SoundCategory.NEUTRAL, (float) 0.9, (float) 0.85);
 				} else {
 					world.getWorld().playSound(x, y, z,
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")),
-							SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chest.open")),
+							SoundCategory.NEUTRAL, (float) 0.9, (float) 0.85, false);
 				}
 				{
 					ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
