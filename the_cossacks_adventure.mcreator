@@ -42,6 +42,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "BlackSoilFarmland",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_soil_farmland"
     }
   ],
   "variable_elements": [],
