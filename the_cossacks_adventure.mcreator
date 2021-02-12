@@ -1,66 +1,10 @@
 {
   "id_map": {},
-  "mod_elements": [
-    {
-      "name": "TestBlock",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "test_block"
-    },
-    {
-      "name": "Salt",
-      "type": "item",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "salt"
-    },
-    {
-      "name": "SaloRecipe",
-      "type": "recipe",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "salo_recipe"
-    },
-    {
-      "name": "Salo",
-      "type": "food",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "salo"
-    },
-    {
-      "name": "SaloEaten",
-      "type": "procedure",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "salo_eaten",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "block.the_cossacks_adventure.test_block": "Test Block"
-    }
+    "en_us": {}
   },
   "workspaceSettings": {
     "modid": "the_cossacks_adventure",
