@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_cossacks_adventure:blocks/blacksoilbottom",
+    "up": "the_cossacks_adventure:blocks/blacksoiltop",
+    "north": "the_cossacks_adventure:blocks/farmland_soil",
+    "east": "the_cossacks_adventure:blocks/farmland_soil",
+    "south": "the_cossacks_adventure:blocks/farmland_soil",
+    "west": "the_cossacks_adventure:blocks/farmland_soil",
+    "particle": "the_cossacks_adventure:blocks/blacksoilbottom"
+  }
+}
