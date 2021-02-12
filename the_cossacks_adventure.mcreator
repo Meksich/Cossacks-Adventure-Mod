@@ -51,6 +51,50 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "black_soil_farmland"
+    },
+    {
+      "name": "Salt",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salt"
+    },
+    {
+      "name": "SaloEaten",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salo_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Salo",
+      "type": "food",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salo"
+    },
+    {
+      "name": "SaloRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salo_recipe"
     }
   ],
   "variable_elements": [],
@@ -58,6 +102,8 @@
   "language_map": {
     "en_us": {
       "block.the_cossacks_adventure.black_soil_farmland": "Black Soil Farmland",
+      "item.the_cossacks_adventure.salo": "Salo",
+      "item.the_cossacks_adventure.salt": "Salt",
       "block.the_cossacks_adventure.black_soil": "Black Soil"
     }
   },

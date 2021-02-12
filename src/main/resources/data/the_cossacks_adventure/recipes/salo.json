@@ -1,0 +1,42 @@
+{
+  "group": "food",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:porkchop"
+    },
+    "1": {
+      "item": "minecraft:porkchop"
+    },
+    "2": {
+      "item": "minecraft:porkchop"
+    },
+    "3": {
+      "item": "the_cossacks_adventure:salt"
+    },
+    "4": {
+      "item": "the_cossacks_adventure:salt"
+    },
+    "5": {
+      "item": "the_cossacks_adventure:salt"
+    },
+    "6": {
+      "item": "minecraft:porkchop"
+    },
+    "7": {
+      "item": "minecraft:porkchop"
+    },
+    "8": {
+      "item": "minecraft:porkchop"
+    }
+  },
+  "result": {
+    "item": "the_cossacks_adventure:salo",
+    "count": 3
+  }
+}
