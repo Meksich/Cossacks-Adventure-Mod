@@ -5,7 +5,7 @@
       "name": "BlackSoil",
       "type": "block",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "black_soil"
@@ -39,6 +39,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "black_soil_farmland"
+    },
+    {
+      "name": "TestBlock",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test_block"
     }
   ],
   "variable_elements": [],
@@ -46,7 +55,8 @@
   "language_map": {
     "en_us": {
       "block.the_cossacks_adventure.black_soil_farmland": "Black Soil Farmland",
-      "block.the_cossacks_adventure.black_soil": "Black Soil"
+      "block.the_cossacks_adventure.black_soil": "Black Soil",
+      "block.the_cossacks_adventure.test_block": "Test Block"
     }
   },
   "workspaceSettings": {
